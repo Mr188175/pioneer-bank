@@ -99,10 +99,10 @@
          })
 
          function updateSpanText(id,depositNumber) {
-            const currentBalance = document.getElementById(id).innerText;
-            const currentBalanceNumber = parseFloat(currentBalance);
-            const totalBalance = depositNumber + currentBalanceNumber;
-            document.getElementById(id).innerText = totalBalance;
+            const current = document.getElementById(id).innerText;
+            const currentNumber = parseFloat(current);
+            const total = depositNumber + currentNumber;
+            document.getElementById(id).innerText = total;
          }
         //  deposit button event handler end
     </script>
