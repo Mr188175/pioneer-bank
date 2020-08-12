@@ -90,8 +90,17 @@
                 
                 const depositNumber = getInputNumber("depositAmount");
 
-                updateSpanText("currentDeposit", depositNumber);
-                updateSpanText("currentBalance", depositNumber);
+                if (depositNumber < 0) {
+                    alert("number can not be negetive");
+                }
+
+                else {
+                    updateSpanText("currentDeposit", depositNumber);
+                    updateSpanText("currentBalance", depositNumber);
+                }
+
+              
+              
             
                 
             })
